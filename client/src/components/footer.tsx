@@ -1,5 +1,5 @@
 import { Link } from "wouter";
-import { Dna, Linkedin, Twitter, Instagram } from "lucide-react";
+import { Linkedin, Twitter, Instagram } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -8,9 +8,11 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-8">
           <div className="md:col-span-2">
             <div className="flex items-center space-x-3 mb-6">
-              <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center">
-                <Dna className="text-primary-foreground text-xl" />
-              </div>
+              <img 
+                src="/attached_assets/400dpiLogo_1757363177677.jpg" 
+                alt="Juventas Revitalization Clinic Logo" 
+                className="w-12 h-12 object-contain"
+              />
               <div>
                 <h3 className="text-xl font-bold">German Therapies</h3>
                 <p className="text-sm text-background/80">Juventas Revitalization Clinic</p>

@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { Menu, Dna } from "lucide-react";
+import { Menu } from "lucide-react";
 
 export default function Header() {
   const [location] = useLocation();
@@ -53,9 +53,11 @@ export default function Header() {
         <div className="flex items-center justify-between">
           <Link href="/" data-testid="link-logo">
             <div className="flex items-center space-x-3">
-              <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center">
-                <Dna className="text-primary-foreground text-xl" />
-              </div>
+              <img 
+                src="/attached_assets/400dpiLogo_1757363177677.jpg" 
+                alt="Juventas Revitalization Clinic Logo" 
+                className="w-12 h-12 object-contain"
+              />
               <div>
                 <h1 className="text-xl font-bold text-foreground">German Therapies</h1>
                 <p className="text-sm text-muted-foreground">Juventas Revitalization Clinic</p>
