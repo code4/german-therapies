@@ -36,9 +36,10 @@ export default function Contact() {
                       <MapPin className="text-primary-foreground w-6 h-6" />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-foreground mb-2">Location</h3>
-                      <p className="text-muted-foreground">Mumbai, India</p>
-                      <p className="text-muted-foreground">Premium Medical Center</p>
+                      <h3 className="font-semibold text-foreground mb-2">Clinic Location</h3>
+                      <p className="text-muted-foreground">Juventas Revitalization Clinic</p>
+                      <p className="text-muted-foreground">Karlstrasse 5, Lahr-Schwarzwald</p>
+                      <p className="text-muted-foreground">77933, Germany</p>
                     </div>
                   </div>
                   
@@ -47,9 +48,9 @@ export default function Contact() {
                       <Phone className="text-secondary-foreground w-6 h-6" />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-foreground mb-2">Phone</h3>
-                      <p className="text-muted-foreground">+91 98765 43210</p>
-                      <p className="text-muted-foreground">24/7 Consultation Line</p>
+                      <h3 className="font-semibold text-foreground mb-2">WhatsApp (India Treatments)</h3>
+                      <p className="text-muted-foreground">+91 7756840429</p>
+                      <p className="text-muted-foreground">For treatment inquiries in India</p>
                     </div>
                   </div>
                   
@@ -59,8 +60,8 @@ export default function Contact() {
                     </div>
                     <div>
                       <h3 className="font-semibold text-foreground mb-2">Email</h3>
-                      <p className="text-muted-foreground">info@germantherapies.in</p>
-                      <p className="text-muted-foreground">consultations@germantherapies.in</p>
+                      <p className="text-muted-foreground">germantherapies@gmail.com</p>
+                      <p className="text-muted-foreground">Treatment inquiries & consultations</p>
                     </div>
                   </div>
                   
