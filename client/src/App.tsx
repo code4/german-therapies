@@ -12,6 +12,11 @@ import JuventasProtocol from "@/pages/juventas-protocol";
 import Androboost from "@/pages/androboost";
 import IVLaserTherapy from "@/pages/iv-laser-therapy";
 import IVOzoneTherapy from "@/pages/iv-ozone-therapy";
+import CardioVitalize from "@/pages/cardio-vitalize";
+import DiabetesTherapy from "@/pages/diabetes-therapy";
+import WeightLoss from "@/pages/weight-loss";
+import IncurableDiseases from "@/pages/incurable-diseases";
+import RejuvenesseAntiAging from "@/pages/rejuvenesse-anti-aging";
 
 function Router() {
   return (
@@ -24,6 +29,11 @@ function Router() {
       <Route path="/services/androboost" component={Androboost} />
       <Route path="/services/iv-laser-therapy" component={IVLaserTherapy} />
       <Route path="/services/iv-ozone-therapy" component={IVOzoneTherapy} />
+      <Route path="/services/cardio-vitalize" component={CardioVitalize} />
+      <Route path="/services/diabetes-therapy" component={DiabetesTherapy} />
+      <Route path="/services/weight-loss" component={WeightLoss} />
+      <Route path="/services/incurable-diseases" component={IncurableDiseases} />
+      <Route path="/services/rejuvenesse-anti-aging" component={RejuvenesseAntiAging} />
       <Route component={NotFound} />
     </Switch>
   );
