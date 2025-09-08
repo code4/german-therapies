@@ -39,7 +39,7 @@ export default function About() {
               </div>
               <div>
                 <img 
-                  src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=800" 
+                  src="/attached_assets/ss6_1757363048629.jpg" 
                   alt="Dr. Shams Scheik - Professional medical portrait" 
                   className="rounded-2xl shadow-lg w-full h-auto"
                   data-testid="img-doctor-portrait"
