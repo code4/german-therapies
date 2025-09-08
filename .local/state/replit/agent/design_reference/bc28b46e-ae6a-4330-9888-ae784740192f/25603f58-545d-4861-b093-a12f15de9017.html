@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>German Therapies - Advanced Anti-Aging & Regenerative Medicine</title>
+    <meta name="description" content="Advanced anti-aging and regenerative medicine treatments by Dr. Shams Scheik. Juventas Protocol, Androboost, IV Laser Therapy, and IV Ozone Therapy available in India.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                borderRadius: {
+                    lg: "var(--radius)",
+                    md: "calc(var(--radius) - 2px)",
+                    sm: "calc(var(--radius) - 4px)",
+                },
+                colors: {
+                    background: "var(--background)",
+                    foreground: "var(--foreground)",
+                    card: {
+                        DEFAULT: "var(--card)",
+                        foreground: "var(--card-foreground)",
+                    },
+                    primary: {
+                        DEFAULT: "var(--primary)",
+                        foreground: "var(--primary-foreground)",
+                    },
+                    secondary: {
+                        DEFAULT: "var(--secondary)",
+                        foreground: "var(--secondary-foreground)",
+                    },
+                    muted: {
+                        DEFAULT: "var(--muted)",
+                        foreground: "var(--muted-foreground)",
+                    },
+                    accent: {
+                        DEFAULT: "var(--accent)",
+                        foreground: "var(--accent-foreground)",
+                    },
+                    border: "var(--border)",
+                    input: "var(--input)",
+                    ring: "var(--ring)",
+                },
+                fontFamily: {
+                    sans: ["Inter", "sans-serif"],
+                    serif: ["Playfair Display", "serif"],
+                }
+            },
+        }
+    };
+    </script>
+    
+    <style>
+        :root {
+            --background: hsl(210 40% 98%);
+            --foreground: hsl(222.2 84% 4.9%);
+            --card: hsl(0 0% 100%);
+            --card-foreground: hsl(222.2 84% 4.9%);
+            --primary: hsl(214 100% 40%);
+            --primary-foreground: hsl(210 40% 98%);
+            --secondary: hsl(168 76% 36%);
+            --secondary-foreground: hsl(210 40% 98%);
+            --muted: hsl(210 40% 96%);
+            --muted-foreground: hsl(215.4 16.3% 46.9%);
+            --accent: hsl(160 84% 39%);
+            --accent-foreground: hsl(210 40% 98%);
+            --border: hsl(214.3 31.8% 91.4%);
+            --input: hsl(214.3 31.8% 91.4%);
+            --ring: hsl(214 100% 40%);
+            --radius: 0.75rem;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(30, 64, 175, 0.1);
+        }
+        
+        .medical-pattern {
+            background-image: 
+                radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.03) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.05) 0%, transparent 50%),
+                radial-gradient(circle at 40% 40%, rgba(13, 148, 136, 0.02) 0%, transparent 50%);
+        }
+    </style>
+</head>
+
+<body class="bg-background text-foreground font-sans">
+    <!-- @COMPONENT: Header [navigation and branding] -->
+    <header class="fixed top-0 w-full z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b border-border">
+        <nav class="container mx-auto px-4 lg:px-8 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-3">
+                    <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center">
+                        <i class="fas fa-dna text-primary-foreground text-xl"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-bold text-foreground">German Therapies</h1>
+                        <p class="text-sm text-muted-foreground">Juventas Revitalization Clinic</p>
+                    </div>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-foreground hover:text-primary transition-colors font-medium">Home</a>
+                    <a href="#services" class="text-muted-foreground hover:text-primary transition-colors font-medium">Services</a>
+                    <a href="#about" class="text-muted-foreground hover:text-primary transition-colors font-medium">About Dr. Scheik</a>
+                    <a href="#contact" class="text-muted-foreground hover:text-primary transition-colors font-medium">Contact</a>
+                    <button class="bg-primary text-primary-foreground px-6 py-2 rounded-lg hover:bg-primary/90 transition-colors font-medium">
+                        Book Consultation
+                    </button>
+                </div>
+                
+                <button class="md:hidden text-foreground">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+    <!-- @END_COMPONENT: Header -->
+
+    <main>
+        <!-- @COMPONENT: Hero Section [main value proposition and CTA] -->
+        <section id="home" class="pt-24 pb-16 hero-gradient medical-pattern">
+            <div class="container mx-auto px-4 lg:px-8">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <div class="inline-flex items-center bg-background/20 backdrop-blur-sm border border-primary-foreground/20 rounded-full px-4 py-2 mb-6">
+                            <i class="fas fa-certificate text-primary-foreground mr-2"></i>
+                            <span class="text-primary-foreground text-sm font-medium">American Board Certified</span>
+                        </div>
+                        
+                        <h1 class="text-4xl lg:text-6xl font-serif font-bold text-primary-foreground mb-6 leading-tight">
+                            Advanced Anti-Aging & Regenerative Medicine
+                        </h1>
+                        
+                        <p class="text-xl text-primary-foreground/90 mb-8 leading-relaxed">
+                            Until recently, the most advanced and truly transformative anti-aging treatments were the closely guarded secret of an elite few. Today, under the visionary leadership of <strong>Dr. Shams Scheik</strong>, these world-class, science-backed therapies are now available in India.
+                        </p>
+                        
+                        <div class="flex flex-col sm:flex-row gap-4">
+                            <button class="bg-background text-primary px-8 py-4 rounded-lg hover:bg-background/90 transition-colors font-semibold text-lg inline-flex items-center">
+                                <i class="fas fa-calendar-check mr-2"></i>
+                                Schedule Your Consultation
+                            </button>
+                            <button class="border-2 border-primary-foreground text-primary-foreground px-8 py-4 rounded-lg hover:bg-primary-foreground/10 transition-colors font-semibold text-lg">
+                                Learn More
+                            </button>
+                        </div>
+                        
+                        <div class="mt-12 grid grid-cols-3 gap-8">
+                            <div class="text-center">
+                                <div class="text-3xl font-bold text-primary-foreground">25,000+</div>
+                                <div class="text-primary-foreground/80 text-sm">Patients Treated</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-3xl font-bold text-primary-foreground">69</div>
+                                <div class="text-primary-foreground/80 text-sm">Countries Served</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-3xl font-bold text-primary-foreground">20+</div>
+                                <div class="text-primary-foreground/80 text-sm">Years Experience</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="relative">
+                        <!-- Professional medical facility or treatment room -->
+                        <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
+                             alt="Modern medical treatment room with advanced equipment" 
+                             class="rounded-2xl shadow-2xl w-full h-auto">
+                        
+                        <div class="absolute -bottom-6 -left-6 bg-background rounded-xl p-6 shadow-lg border border-border">
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-accent rounded-full flex items-center justify-center">
+                                    <i class="fas fa-award text-accent-foreground"></i>
+                                </div>
+                                <div>
+                                    <div class="font-semibold text-foreground">German Precision</div>
+                                    <div class="text-muted-foreground text-sm">World-Class Standards</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- @END_COMPONENT: Hero Section -->
+
+        <!-- @COMPONENT: Services Section [treatment showcase] -->
+        <section id="services" class="py-20 bg-muted/50">
+            <div class="container mx-auto px-4 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-serif font-bold text-foreground mb-4">Our Revolutionary Treatments</h2>
+                    <p class="text-xl text-muted-foreground max-w-3xl mx-auto">
+                        Advanced regenerative technologies and personalized protocols designed to optimize your health and vitality.
+                    </p>
+                </div>
+                
+                <div class="grid lg:grid-cols-2 gap-8">
+                    <!-- Juventas Protocol -->
+                    <div class="bg-card rounded-2xl p-8 shadow-sm border border-border card-hover">
+                        <div class="w-16 h-16 bg-primary rounded-xl flex items-center justify-center mb-6">
+                            <i class="fas fa-atom text-primary-foreground text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-serif font-semibold text-card-foreground mb-4">Juventas Protocol™</h3>
+                        <p class="text-muted-foreground mb-6 leading-relaxed">
+                            Our signature anti-aging program based on 10 core pillars, combining the latest regenerative technologies, epigenetics, and natural healing mechanisms for personalized health optimization.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <button class="text-primary font-semibold hover:text-primary/80 transition-colors inline-flex items-center">
+                                Learn More <i class="fas fa-arrow-right ml-2"></i>
+                            </button>
+                            <div class="bg-accent/10 text-accent px-3 py-1 rounded-full text-sm font-medium">
+                                Signature Treatment
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Androboost Program -->
+                    <div class="bg-card rounded-2xl p-8 shadow-sm border border-border card-hover">
+                        <div class="w-16 h-16 bg-secondary rounded-xl flex items-center justify-center mb-6">
+                            <i class="fas fa-heartbeat text-secondary-foreground text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-serif font-semibold text-card-foreground mb-4">Androboost Program</h3>
+                        <p class="text-muted-foreground mb-6 leading-relaxed">
+                            A bespoke regenerative solution for male vitality and performance. This drug-free approach addresses erectile dysfunction and low libido by targeting root causes through advanced therapies.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <button class="text-primary font-semibold hover:text-primary/80 transition-colors inline-flex items-center">
+                                Discover Androboost <i class="fas fa-arrow-right ml-2"></i>
+                            </button>
+                            <div class="bg-secondary/10 text-secondary px-3 py-1 rounded-full text-sm font-medium">
+                                Male Vitality
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- IV Laser Therapy -->
+                    <div class="bg-card rounded-2xl p-8 shadow-sm border border-border card-hover">
+                        <div class="w-16 h-16 bg-accent rounded-xl flex items-center justify-center mb-6">
+                            <i class="fas fa-lightbulb text-accent-foreground text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-serif font-semibold text-card-foreground mb-4">IV Laser Therapy</h3>
+                        <p class="text-muted-foreground mb-6 leading-relaxed">
+                            Cutting-edge photomedicine delivering specific laser wavelengths directly into the bloodstream for enhanced cellular function, immune modulation, and systemic healing.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <button class="text-primary font-semibold hover:text-primary/80 transition-colors inline-flex items-center">
+                                Explore IVLT <i class="fas fa-arrow-right ml-2"></i>
+                            </button>
+                            <div class="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm font-medium">
+                                Photomedicine
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- IV Ozone Therapy -->
+                    <div class="bg-card rounded-2xl p-8 shadow-sm border border-border card-hover">
+                        <div class="w-16 h-16 bg-primary rounded-xl flex items-center justify-center mb-6">
+                            <i class="fas fa-lungs text-primary-foreground text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-serif font-semibold text-card-foreground mb-4">IV Ozonated Saline Therapy</h3>
+                        <p class="text-muted-foreground mb-6 leading-relaxed">
+                            Revolutionary oxidative medicine combining medical ozone with IV saline for immune system modulation, detoxification, and cellular regeneration with minimal side effects.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <button class="text-primary font-semibold hover:text-primary/80 transition-colors inline-flex items-center">
+                                Learn About IVOST <i class="fas fa-arrow-right ml-2"></i>
+                            </button>
+                            <div class="bg-muted text-muted-foreground px-3 py-1 rounded-full text-sm font-medium">
+                                Oxidative Medicine
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-12">
+                    <button class="bg-primary text-primary-foreground px-8 py-4 rounded-lg hover:bg-primary/90 transition-colors font-semibold text-lg inline-flex items-center">
+                        <i class="fas fa-phone mr-2"></i>
+                        Discuss Your Treatment Options
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!-- @END_COMPONENT: Services Section -->
+
+        <!-- @COMPONENT: About Doctor Section [credentials and experience] -->
+        <section id="about" class="py-20 bg-background">
+            <div class="container mx-auto px-4 lg:px-8">
+                <div class="grid lg:grid-cols-2 gap-16 items-center">
+                    <div>
+                        <!-- Professional headshot of medical professional -->
+                        <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=800" 
+                             alt="Dr. Shams Scheik - Professional medical headshot" 
+                             class="rounded-2xl shadow-lg w-full h-auto">
+                        
+                        <div class="mt-8 grid grid-cols-2 gap-4">
+                            <div class="bg-card rounded-xl p-4 border border-border text-center">
+                                <div class="text-2xl font-bold text-primary">2010-2021</div>
+                                <div class="text-muted-foreground text-sm">Germany Clinic</div>
+                            </div>
+                            <div class="bg-card rounded-xl p-4 border border-border text-center">
+                                <div class="text-2xl font-bold text-secondary">ABAARM</div>
+                                <div class="text-muted-foreground text-sm">Board Certified</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <div class="inline-flex items-center bg-primary/10 text-primary rounded-full px-4 py-2 mb-6">
+                            <i class="fas fa-user-md mr-2"></i>
+                            <span class="font-medium">Meet Our Founder</span>
+                        </div>
+                        
+                        <h2 class="text-4xl font-serif font-bold text-foreground mb-6">Dr. Shams Scheik</h2>
+                        
+                        <div class="space-y-4 mb-8">
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-graduation-cap text-primary"></i>
+                                <span class="text-muted-foreground">MBBS, MD (Internal Med), ABAARM(USA), Diplom Orthomol.Med.(Germany)</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-certificate text-secondary"></i>
+                                <span class="text-muted-foreground">American Board Certified in Anti-aging and Regenerative Medicine</span>
+                            </div>
+                        </div>
+                        
+                        <p class="text-lg text-muted-foreground mb-6 leading-relaxed">
+                            Dr. Scheik is an award-winning, American Board-certified physician specializing in advanced anti-aging and regenerative medicine. With a distinguished career spanning over two decades, he founded and led the prestigious Juventas Revitalization Clinic in Lahr-Schwarzwald, Germany, from 2010 to 2021.
+                        </p>
+                        
+                        <p class="text-lg text-muted-foreground mb-8 leading-relaxed">
+                            During this time, he delivered exceptional care to over 25,000 patients from 69 countries, establishing a reputation for pioneering highly effective therapeutic protocols that combine leading-edge German, American, and Russian regenerative medical technologies.
+                        </p>
+                        
+                        <div class="bg-muted rounded-xl p-6 mb-8">
+                            <p class="text-foreground font-medium italic">
+                                "His exclusive clientele includes national and international celebrities, C-suite executives, influential politicians, professional athletes, and global business magnates who trust his innovative, personalized approach to health and wellness."
+                            </p>
+                        </div>
+                        
+                        <button class="bg-secondary text-secondary-foreground px-8 py-4 rounded-lg hover:bg-secondary/90 transition-colors font-semibold inline-flex items-center">
+                            <i class="fas fa-file-alt mr-2"></i>
+                            Read Full Biography
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- @END_COMPONENT: About Doctor Section -->
+
+        <!-- @COMPONENT: Testimonials Section [social proof] -->
+        <section class="py-20 bg-muted/50">
+            <div class="container mx-auto px-4 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-serif font-bold text-foreground mb-4">Trusted by Global Leaders</h2>
+                    <p class="text-xl text-muted-foreground">
+                        Celebrities, executives, athletes, and discerning individuals choose German Therapies
+                    </p>
+                </div>
+                
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-card rounded-xl p-8 border border-border">
+                        <div class="flex items-center mb-4">
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="text-card-foreground mb-6 leading-relaxed">
+                            "The Juventas Protocol transformed my energy levels and overall vitality. Dr. Scheik's approach is truly revolutionary and personalized."
+                        </p>
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-primary-foreground font-semibold">
+                                CE
+                            </div>
+                            <div class="ml-4">
+                                <div class="font-semibold text-card-foreground" data-mock="true">Corporate Executive</div>
+                                <div class="text-muted-foreground text-sm" data-mock="true">Fortune 500 Company</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-card rounded-xl p-8 border border-border">
+                        <div class="flex items-center mb-4">
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="text-card-foreground mb-6 leading-relaxed">
+                            "The IV therapies provided incredible results for my recovery and performance. World-class treatment with German precision."
+                        </p>
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-secondary rounded-full flex items-center justify-center text-secondary-foreground font-semibold">
+                                PA
+                            </div>
+                            <div class="ml-4">
+                                <div class="font-semibold text-card-foreground" data-mock="true">Professional Athlete</div>
+                                <div class="text-muted-foreground text-sm" data-mock="true">International Sports</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-card rounded-xl p-8 border border-border">
+                        <div class="flex items-center mb-4">
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="text-card-foreground mb-6 leading-relaxed">
+                            "Dr. Scheik's expertise in regenerative medicine is unmatched. The comprehensive approach delivered exceptional results."
+                        </p>
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-accent rounded-full flex items-center justify-center text-accent-foreground font-semibold">
+                                BL
+                            </div>
+                            <div class="ml-4">
+                                <div class="font-semibold text-card-foreground" data-mock="true">Business Leader</div>
+                                <div class="text-muted-foreground text-sm" data-mock="true">Healthcare Industry</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- @END_COMPONENT: Testimonials Section -->
+
+        <!-- @COMPONENT: Contact Section [working contact form with validation] -->
+        <section id="contact" class="py-20 bg-background">
+            <div class="container mx-auto px-4 lg:px-8">
+                <div class="grid lg:grid-cols-2 gap-16">
+                    <div>
+                        <h2 class="text-4xl font-serif font-bold text-foreground mb-6">Ready to Begin Your Transformation?</h2>
+                        <p class="text-xl text-muted-foreground mb-8 leading-relaxed">
+                            Schedule a comprehensive consultation to discuss your health goals and discover which advanced treatments are right for you.
+                        </p>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-map-marker-alt text-primary-foreground"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold text-foreground mb-2">Location</h3>
+                                    <p class="text-muted-foreground" data-mock="true">Mumbai, India<br>Premium Medical Center</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-phone text-secondary-foreground"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold text-foreground mb-2">Phone</h3>
+                                    <p class="text-muted-foreground" data-mock="true">+91 98765 43210<br>24/7 Consultation Line</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 bg-accent rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-envelope text-accent-foreground"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold text-foreground mb-2">Email</h3>
+                                    <p class="text-muted-foreground" data-mock="true">info@germantherapies.in<br>consultations@germantherapies.in</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-clock text-primary-foreground"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold text-foreground mb-2">Hours</h3>
+                                    <p class="text-muted-foreground" data-mock="true">Monday - Saturday: 9:00 AM - 8:00 PM<br>Sunday: By Appointment</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-card rounded-2xl p-8 border border-border shadow-sm">
+                        <h3 class="text-2xl font-serif font-semibold text-card-foreground mb-6">Book Your Consultation</h3>
+                        
+                        <form class="space-y-6" data-implementation="Form should submit to contact API endpoint with validation">
+                            <div class="grid md:grid-cols-2 gap-4">
+                                <div>
+                                    <label for="firstName" class="block text-sm font-medium text-card-foreground mb-2">First Name *</label>
+                                    <input type="text" id="firstName" name="firstName" required 
+                                           class="w-full px-4 py-3 bg-input border border-border rounded-lg focus:ring-2 focus:ring-ring focus:border-transparent transition-colors"
+                                           placeholder="Enter your first name">
+                                </div>
+                                <div>
+                                    <label for="lastName" class="block text-sm font-medium text-card-foreground mb-2">Last Name *</label>
+                                    <input type="text" id="lastName" name="lastName" required
+                                           class="w-full px-4 py-3 bg-input border border-border rounded-lg focus:ring-2 focus:ring-ring focus:border-transparent transition-colors"
+                                           placeholder="Enter your last name">
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-card-foreground mb-2">Email Address *</label>
+                                <input type="email" id="email" name="email" required
+                                       class="w-full px-4 py-3 bg-input border border-border rounded-lg focus:ring-2 focus:ring-ring focus:border-transparent transition-colors"
+                                       placeholder="Enter your email address">
+                            </div>
+                            
+                            <div>
+                                <label for="phone" class="block text-sm font-medium text-card-foreground mb-2">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" required
+                                       class="w-full px-4 py-3 bg-input border border-border rounded-lg focus:ring-2 focus:ring-ring focus:border-transparent transition-colors"
+                                       placeholder="Enter your phone number">
+                            </div>
+                            
+                            <div>
+                                <label for="treatment" class="block text-sm font-medium text-card-foreground mb-2">Treatment Interest</label>
+                                <select id="treatment" name="treatment" 
+                                        class="w-full px-4 py-3 bg-input border border-border rounded-lg focus:ring-2 focus:ring-ring focus:border-transparent transition-colors">
+                                    <option value="">Select a treatment (optional)</option>
+                                    <option value="juventas-protocol">Juventas Protocol™</option>
+                                    <option value="androboost">Androboost Program</option>
+                                    <option value="iv-laser">IV Laser Therapy</option>
+                                    <option value="iv-ozone">IV Ozone Therapy</option>
+                                    <option value="consultation">General Consultation</option>
+                                </select>
+                            </div>
+                            
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-card-foreground mb-2">Message</label>
+                                <textarea id="message" name="message" rows="4"
+                                          class="w-full px-4 py-3 bg-input border border-border rounded-lg focus:ring-2 focus:ring-ring focus:border-transparent transition-colors"
+                                          placeholder="Tell us about your health goals and any specific concerns..."></textarea>
+                            </div>
+                            
+                            <div class="flex items-start space-x-3">
+                                <input type="checkbox" id="consent" name="consent" required
+                                       class="w-5 h-5 text-primary border-border rounded focus:ring-ring">
+                                <label for="consent" class="text-sm text-muted-foreground leading-relaxed">
+                                    I consent to being contacted by German Therapies regarding my consultation request and agree to the privacy policy. *
+                                </label>
+                            </div>
+                            
+                            <button type="submit" 
+                                    class="w-full bg-primary text-primary-foreground px-8 py-4 rounded-lg hover:bg-primary/90 transition-colors font-semibold text-lg inline-flex items-center justify-center"
+                                    data-event="click:handleSubmit" data-implementation="Should validate form before submission">
+                                <i class="fas fa-paper-plane mr-2"></i>
+                                Send Consultation Request
+                            </button>
+                        </form>
+                        
+                        <div class="mt-6 pt-6 border-t border-border text-center">
+                            <p class="text-muted-foreground text-sm">
+                                Urgent consultations? Call us directly at 
+                                <span class="text-primary font-semibold" data-mock="true">+91 98765 43210</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- @END_COMPONENT: Contact Section -->
+    </main>
+
+    <!-- @COMPONENT: Footer [company info and links] -->
+    <footer class="bg-foreground text-background py-16">
+        <div class="container mx-auto px-4 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="md:col-span-2">
+                    <div class="flex items-center space-x-3 mb-6">
+                        <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center">
+                            <i class="fas fa-dna text-primary-foreground text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold">German Therapies</h3>
+                            <p class="text-sm text-background/80">Juventas Revitalization Clinic</p>
+                        </div>
+                    </div>
+                    <p class="text-background/80 leading-relaxed mb-6">
+                        Advanced anti-aging and regenerative medicine treatments by Dr. Shams Scheik. 
+                        World-class, science-backed therapies now available in India with German precision and quality.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center hover:bg-primary/90 transition-colors">
+                            <i class="fab fa-linkedin text-primary-foreground"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center hover:bg-primary/90 transition-colors">
+                            <i class="fab fa-twitter text-primary-foreground"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center hover:bg-primary/90 transition-colors">
+                            <i class="fab fa-instagram text-primary-foreground"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Treatments</h4>
+                    <ul class="space-y-3 text-background/80">
+                        <li><a href="#" class="hover:text-background transition-colors">Juventas Protocol™</a></li>
+                        <li><a href="#" class="hover:text-background transition-colors">Androboost Program</a></li>
+                        <li><a href="#" class="hover:text-background transition-colors">IV Laser Therapy</a></li>
+                        <li><a href="#" class="hover:text-background transition-colors">IV Ozone Therapy</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Company</h4>
+                    <ul class="space-y-3 text-background/80">
+                        <li><a href="#" class="hover:text-background transition-colors">About Dr. Scheik</a></li>
+                        <li><a href="#" class="hover:text-background transition-colors">Patient Stories</a></li>
+                        <li><a href="#" class="hover:text-background transition-colors">Research</a></li>
+                        <li><a href="#" class="hover:text-background transition-colors">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-background/20 mt-12 pt-8 text-center text-background/60">
+                <p>&copy; 2025 German Therapies. All rights reserved. | Juventas Revitalization Clinic</p>
+            </div>
+        </div>
+    </footer>
+    <!-- @END_COMPONENT: Footer -->
+
+    <script>
+        // TODO: Implement form validation and submission
+        (function() {
+            // Form submission handler
+            const contactForm = document.querySelector('form[data-implementation*="Form should submit"]');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // TODO: Add form validation logic
+                    // TODO: Add API endpoint integration
+                    // TODO: Add success/error messaging
+                    
+                    console.log('Form submitted - implement API call here');
+                    alert('Thank you for your consultation request. We will contact you within 24 hours.');
+                });
+            }
+            
+            // Smooth scrolling for navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+        })();
+    </script>
+</body>
+</html>

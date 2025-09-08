@@ -28,6 +28,7 @@ export default function ContactForm() {
       treatment: "",
       message: "",
       consent: false,
+      website: "", // Honeypot field
     },
   });
 
@@ -208,6 +209,23 @@ export default function ContactForm() {
                 </FormItem>
               )}
             />
+
+            {/* Honeypot field - hidden from users but visible to bots */}
+            <FormField
+              control={form.control}
+              name="website"
+              render={({ field }) => (
+                <FormItem style={{ display: 'none' }}>
+                  <FormControl>
+                    <Input
+                      {...field}
+                      tabIndex={-1}
+                      autoComplete="off"
+                    />
+                  </FormControl>
+                </FormItem>
+              )}
+            />
             
             <Button
               type="submit"
@@ -225,7 +243,7 @@ export default function ContactForm() {
         <div className="mt-6 pt-6 border-t border-border text-center">
           <p className="text-muted-foreground text-sm">
             Urgent consultations? Call us directly at{" "}
-            <span className="text-primary font-semibold">+91 98765 43210</span>
+            <span className="text-primary font-semibold">+91 7756840429</span>
           </p>
         </div>
       </CardContent>

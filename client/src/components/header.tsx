@@ -82,11 +82,38 @@ export default function Header() {
             </SheetTrigger>
             <SheetContent side="right" className="w-[300px] sm:w-[400px]">
               <div className="flex flex-col space-y-6 mt-6">
-                <div onClick={() => setIsOpen(false)}>
-                  <NavLinks />
-                </div>
-                <Link href="/contact" data-testid="button-mobile-consultation">
-                  <Button className="w-full bg-primary text-primary-foreground hover:bg-primary/90" onClick={() => setIsOpen(false)}>
+                <nav className="flex flex-col space-y-4">
+                  <Link href="/" data-testid="link-home" onClick={() => setIsOpen(false)}>
+                    <span className={`font-medium transition-colors hover:text-primary block py-2 ${
+                      isActiveLink("/") ? "text-foreground" : "text-muted-foreground"
+                    }`}>
+                      Home
+                    </span>
+                  </Link>
+                  <Link href="/services" data-testid="link-services" onClick={() => setIsOpen(false)}>
+                    <span className={`font-medium transition-colors hover:text-primary block py-2 ${
+                      isActiveLink("/services") ? "text-foreground" : "text-muted-foreground"
+                    }`}>
+                      Services
+                    </span>
+                  </Link>
+                  <Link href="/about" data-testid="link-about" onClick={() => setIsOpen(false)}>
+                    <span className={`font-medium transition-colors hover:text-primary block py-2 ${
+                      isActiveLink("/about") ? "text-foreground" : "text-muted-foreground"
+                    }`}>
+                      About Dr. Scheik
+                    </span>
+                  </Link>
+                  <Link href="/contact" data-testid="link-contact" onClick={() => setIsOpen(false)}>
+                    <span className={`font-medium transition-colors hover:text-primary block py-2 ${
+                      isActiveLink("/contact") ? "text-foreground" : "text-muted-foreground"
+                    }`}>
+                      Contact
+                    </span>
+                  </Link>
+                </nav>
+                <Link href="/contact" data-testid="button-mobile-consultation" onClick={() => setIsOpen(false)}>
+                  <Button className="w-full bg-primary text-primary-foreground hover:bg-primary/90">
                     Book Consultation
                   </Button>
                 </Link>

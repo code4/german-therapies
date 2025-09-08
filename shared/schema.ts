@@ -37,6 +37,7 @@ export const insertContactSchema = createInsertSchema(contactSubmissions).omit({
   treatment: z.string().optional(),
   message: z.string().optional(),
   consent: z.boolean().refine(val => val === true, "You must consent to be contacted"),
+  website: z.string().optional(), // Honeypot field - should be empty
 });
 
 export type InsertUser = z.infer<typeof insertUserSchema>;

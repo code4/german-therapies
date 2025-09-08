@@ -81,7 +81,7 @@ export default function Footer() {
                 className="h-16 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity"
               />
               <img 
-                src="/attached_assets/Gesellschaft für Biologische Krebsabwehr e.V, Germany_1757363282901.jpg" 
+                src="/attached_assets/gesellschaft-biologische-krebsabwehr.jpg" 
                 alt="Gesellschaft für Biologische Krebsabwehr" 
                 className="h-16 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity"
               />
@@ -99,7 +99,7 @@ export default function Footer() {
           </div>
           
           <div className="text-center text-background/60">
-            <p>&copy; 2024 German Therapies. All rights reserved. | Juventas Revitalization Clinic</p>
+            <p>&copy; 2025 German Therapies. All rights reserved. | Juventas Revitalization Clinic</p>
           </div>
         </div>
       </div>

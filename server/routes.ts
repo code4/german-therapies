@@ -11,12 +11,34 @@ export async function registerRoutes(app: Express): Promise<Server> {
     try {
       const validatedData = insertContactSchema.parse(req.body);
       
+      // Spam Protection #1: Honeypot field check
+      if (validatedData.website && validatedData.website.trim() !== '') {
+        console.log('Spam detected: honeypot field filled');
+        return res.status(400).json({ message: 'Invalid submission' });
+      }
+      
+      // Spam Protection #2: Basic content validation
+      const suspiciousPatterns = [
+        /https?:\/\//gi, // URLs in form data
+        /\b(casino|poker|viagra|cialis|pharmacy)\b/gi, // Common spam words
+        /(.)\1{10,}/, // Repeated characters (aaaaaaaaaa)
+      ];
+      
+      const contentToCheck = `${validatedData.firstName} ${validatedData.lastName} ${validatedData.message}`;
+      if (suspiciousPatterns.some(pattern => pattern.test(contentToCheck))) {
+        console.log('Spam detected: suspicious content patterns');
+        return res.status(400).json({ message: 'Invalid submission content' });
+      }
+      
+      // Remove the honeypot field before saving to database
+      const { website, ...dataToSave } = validatedData;
+      
       // Store the contact submission
-      const contact = await storage.createContactSubmission(validatedData);
+      const contact = await storage.createContactSubmission(dataToSave);
       
       // Send email notification
       try {
-        await sendContactNotificationEmail(validatedData);
+        await sendContactNotificationEmail(dataToSave);
       } catch (emailError) {
         console.error("Failed to send email:", emailError);
         // Don't fail the request if email fails
@@ -58,7 +80,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
 
 async function sendContactNotificationEmail(contactData: any) {
   // Configure nodemailer transporter
-  const transporter = nodemailer.createTransporter({
+  const transporter = nodemailer.createTransport({
     host: process.env.SMTP_HOST || "smtp.gmail.com",
     port: parseInt(process.env.SMTP_PORT || "587"),
     secure: false,
