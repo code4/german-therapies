@@ -1,5 +1,4 @@
 {
-  "version": 2,
   "buildCommand": "npm run build-vercel",
   "outputDirectory": "dist/public",
   "routes": [
@@ -15,10 +14,5 @@
       "src": "/(.*)",
       "dest": "/index.html"
     }
-  ],
-  "functions": {
-    "api/contact.ts": {
-      "runtime": "@vercel/node@3"
-    }
-  }
+  ]
 }
