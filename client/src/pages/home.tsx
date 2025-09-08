@@ -3,14 +3,44 @@ import Footer from "@/components/footer";
 import HeroSection from "@/components/hero-section";
 import ServicesSection from "@/components/services-section";
 import TestimonialsSection from "@/components/testimonials-section";
+import SEO from "@/components/seo";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { GraduationCap, Award, FileText } from "lucide-react";
 
 export default function Home() {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "MedicalBusiness",
+    "name": "German Therapies",
+    "description": "Advanced anti-aging and regenerative medicine treatments by Dr. Shams Scheik. Offering Juventas Protocol, hormone therapy, IV laser & ozone therapy, and cutting-edge medical treatments.",
+    "url": "https://german-therapies.vercel.app",
+    "telephone": "+91 7756840429",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "IN"
+    },
+    "founder": {
+      "@type": "Person",
+      "name": "Dr. Shams Scheik",
+      "jobTitle": "Medical Director",
+      "description": "American Board Certified physician specializing in anti-aging and regenerative medicine"
+    },
+    "medicalSpecialty": ["Anti-Aging Medicine", "Regenerative Medicine", "Hormone Therapy", "IV Therapy"],
+    "paymentAccepted": ["Cash", "Credit Card"],
+    "priceRange": "$$$$"
+  };
+
   return (
     <>
+      <SEO 
+        title="German Therapies - Advanced Anti-Aging & Regenerative Medicine | Dr. Shams Scheik"
+        description="Experience cutting-edge anti-aging and regenerative medicine with Dr. Shams Scheik. Offering Juventas Protocol, AndroBoost, IV Laser & Ozone therapy, and advanced medical treatments for optimal health and longevity."
+        keywords="German therapies, anti-aging medicine, regenerative medicine, Dr. Shams Scheik, Juventas Protocol, AndroBoost, hormone therapy, IV laser therapy, IV ozone therapy, longevity medicine, advanced medical treatments"
+        structuredData={structuredData}
+        canonicalUrl="https://german-therapies.vercel.app/"
+      />
       <Header />
       <main>
         <HeroSection />

@@ -1,5 +1,6 @@
 import Header from "@/components/header";
 import Footer from "@/components/footer";
+import SEO from "@/components/seo";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -72,6 +73,12 @@ const treatments = [
 export default function Services() {
   return (
     <>
+      <SEO 
+        title="Medical Services - German Therapies | Advanced Anti-Aging Treatments"
+        description="Explore our comprehensive range of advanced medical services including Juventas Protocol, AndroBoost hormone therapy, IV laser & ozone therapy, CardioVitalize, and cutting-edge anti-aging treatments by Dr. Shams Scheik."
+        keywords="medical services, Juventas Protocol, AndroBoost, IV laser therapy, IV ozone therapy, CardioVitalize, diabetes therapy, weight loss, anti-aging treatments, regenerative medicine"
+        canonicalUrl="https://german-therapies.vercel.app/services"
+      />
       <Header />
       <main className="pt-24">
         {/* Hero Section */}

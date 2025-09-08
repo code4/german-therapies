@@ -1,11 +1,18 @@
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 import ContactForm from "@/components/contact-form";
+import SEO from "@/components/seo";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
 
 export default function Contact() {
   return (
     <>
+      <SEO 
+        title="Contact Us - German Therapies | Schedule Your Consultation"
+        description="Contact German Therapies to schedule your personalized consultation with Dr. Shams Scheik. Call +91 7756840429 or fill out our form to start your anti-aging and regenerative medicine journey."
+        keywords="contact German therapies, schedule consultation, Dr. Shams Scheik appointment, anti-aging consultation, medical consultation booking"
+        canonicalUrl="https://german-therapies.vercel.app/contact"
+      />
       <Header />
       <main className="pt-24">
         {/* Hero Section */}

@@ -1,5 +1,6 @@
 import Header from "@/components/header";
 import Footer from "@/components/footer";
+import SEO from "@/components/seo";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -33,8 +34,31 @@ const benefits = [
 ];
 
 export default function JuventasProtocol() {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "MedicalTherapy",
+    "name": "Juventas Protocol",
+    "description": "Our signature anti-aging program based on 10 core pillars, combining the latest regenerative technologies, epigenetics, and natural healing mechanisms.",
+    "provider": {
+      "@type": "MedicalBusiness",
+      "name": "German Therapies",
+      "founder": {
+        "@type": "Person",
+        "name": "Dr. Shams Scheik"
+      }
+    },
+    "medicalSpecialty": ["Anti-Aging Medicine", "Regenerative Medicine"]
+  };
+
   return (
     <>
+      <SEO 
+        title="Juventas Protocol™ - Advanced Anti-Aging Program | German Therapies"
+        description="Discover the revolutionary Juventas Protocol™ by Dr. Shams Scheik. Our signature anti-aging program based on 10 core pillars combines regenerative technologies, epigenetics, and natural healing mechanisms for optimal longevity."
+        keywords="Juventas Protocol, anti-aging program, regenerative medicine, epigenetics, longevity treatment, advanced anti-aging, personalized medicine, Dr. Shams Scheik"
+        canonicalUrl="https://german-therapies.vercel.app/services/juventas-protocol"
+        structuredData={structuredData}
+      />
       <Header />
       <main className="pt-24">
         {/* Hero Section */}

@@ -1,5 +1,6 @@
 import Header from "@/components/header";
 import Footer from "@/components/footer";
+import SEO from "@/components/seo";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -9,6 +10,12 @@ import { GraduationCap, Award, MapPin, Users, Calendar, Phone } from "lucide-rea
 export default function About() {
   return (
     <>
+      <SEO 
+        title="About Dr. Shams Scheik - German Therapies | Anti-Aging Specialist"
+        description="Meet Dr. Shams Scheik, American Board Certified physician specializing in advanced anti-aging and regenerative medicine. With 20+ years of experience treating 25,000+ patients across 69 countries."
+        keywords="Dr. Shams Scheik, anti-aging specialist, regenerative medicine doctor, American Board Certified, medical director, longevity medicine"
+        canonicalUrl="https://german-therapies.vercel.app/about"
+      />
       <Header />
       <main className="pt-24">
         {/* Hero Section */}
