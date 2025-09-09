@@ -1,5 +1,6 @@
 import Header from "@/components/header";
 import Footer from "@/components/footer";
+import SEO from "@/components/seo";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -7,8 +8,40 @@ import { Badge } from "@/components/ui/badge";
 import { Activity, Target, TrendingDown, Calendar } from "lucide-react";
 
 export default function DiabetesTherapy() {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "MedicalTherapy",
+    "name": "Regenerative Therapy for Diabetes",
+    "description": "Revolutionary metabolic therapy program that reverses Type II diabetes at the cellular-mitochondrial level using German biological medicine principles. 90% of Type II Diabetes cases are reversible without surgery or drugs.",
+    "provider": {
+      "@type": "MedicalBusiness",
+      "name": "German Therapies",
+      "founder": {
+        "@type": "Person",
+        "name": "Dr. Shams Scheik"
+      }
+    },
+    "medicalSpecialty": ["Diabetes Treatment", "Metabolic Medicine", "German Biological Medicine", "Blood Sugar Management"],
+    "treatmentBenefits": [
+      "90% reversal rate for Type II diabetes",
+      "No surgery or invasive procedures required", 
+      "Natural weight loss of 5-12 kg within 2 months",
+      "Blood sugar normalization",
+      "Medication reduction or elimination",
+      "Cancer risk reduction",
+      "Cardiovascular protection"
+    ]
+  };
+
   return (
     <>
+      <SEO 
+        title="Diabetes Therapy - Type 2 Diabetes Reversal Program | German Therapies"
+        description="Reverse Type 2 diabetes naturally with Dr. Shams Scheik's regenerative therapy program. 90% success rate using German biological medicine. 7-month comprehensive treatment without surgery or drugs."
+        keywords="diabetes therapy, type 2 diabetes reversal, diabetes treatment, blood sugar management, German biological medicine, metabolic therapy, diabetes reversal program, natural diabetes treatment"
+        canonicalUrl="https://german-therapies.vercel.app/diabetes-therapy"
+        structuredData={structuredData}
+      />
       <Header />
       <main className="pt-24">
         {/* Hero Section */}

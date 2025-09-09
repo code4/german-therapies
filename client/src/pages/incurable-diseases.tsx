@@ -1,5 +1,6 @@
 import Header from "@/components/header";
 import Footer from "@/components/footer";
+import SEO from "@/components/seo";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -7,8 +8,41 @@ import { Badge } from "@/components/ui/badge";
 import { Heart, Brain, Zap, Shield } from "lucide-react";
 
 export default function IncurableDiseases() {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "MedicalTherapy",
+    "name": "Treatment of Incurable Diseases",
+    "description": "Revolutionary approach using German biological medicine principles to treat rare and chronic conditions through root-cause focused regenerative therapies. Hope for conditions conventional medicine considers hopeless.",
+    "provider": {
+      "@type": "MedicalBusiness",
+      "name": "German Therapies",
+      "founder": {
+        "@type": "Person",
+        "name": "Dr. Shams Scheik"
+      }
+    },
+    "medicalSpecialty": ["Rare Disease Treatment", "Complex Medical Conditions", "German Biological Medicine", "Regenerative Medicine"],
+    "treatmentBenefits": [
+      "Root-cause focused treatment approach",
+      "Stimulates body's natural healing mechanisms", 
+      "Uses regenerative medical technology",
+      "Individualized treatment protocols",
+      "Addresses autoimmune conditions",
+      "Neurological disorder treatment",
+      "Degenerative condition management",
+      "Alternative to conventional limitations"
+    ]
+  };
+
   return (
     <>
+      <SEO 
+        title="Incurable Diseases Treatment - Complex Medical Conditions | German Therapies"
+        description="Find hope for 'incurable' diseases with Dr. Shams Scheik's German biological medicine approach. Revolutionary treatment for autoimmune, neurological, and degenerative conditions using regenerative therapies."
+        keywords="incurable diseases treatment, rare disease treatment, complex medical conditions, German biological medicine, autoimmune treatment, neurological disorders, degenerative conditions, regenerative medicine"
+        canonicalUrl="https://german-therapies.vercel.app/incurable-diseases"
+        structuredData={structuredData}
+      />
       <Header />
       <main className="pt-24">
         {/* Hero Section */}

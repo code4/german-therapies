@@ -1,5 +1,6 @@
 import Header from "@/components/header";
 import Footer from "@/components/footer";
+import SEO from "@/components/seo";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -7,8 +8,39 @@ import { Badge } from "@/components/ui/badge";
 import { Heart, Clock, CheckCircle, Calendar } from "lucide-react";
 
 export default function CardioVitalize() {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "MedicalTherapy",
+    "name": "CardioVitalize Program",
+    "description": "Advanced cardiac regeneration therapy that removes blockages from all arteries and regenerates damaged heart muscle cells using cutting-edge German medical technology. Non-surgical alternative to bypass surgery and angioplasty.",
+    "provider": {
+      "@type": "MedicalBusiness",
+      "name": "German Therapies",
+      "founder": {
+        "@type": "Person",
+        "name": "Dr. Shams Scheik"
+      }
+    },
+    "medicalSpecialty": ["Cardiovascular Medicine", "Cardiac Regeneration", "Non-Surgical Heart Treatment", "German Biological Medicine"],
+    "treatmentBenefits": [
+      "Non-surgical approach to coronary heart disease",
+      "Treats all arteries, not just major vessels", 
+      "Regenerates damaged heart muscle",
+      "90% of patients avoid bypass surgery or angioplasty",
+      "Enhanced cardiovascular circulation",
+      "Improved heart muscle function"
+    ]
+  };
+
   return (
     <>
+      <SEO 
+        title="CardioVitalize Program - Non-Surgical Heart Treatment | German Therapies"
+        description="Avoid bypass surgery with CardioVitalize Program by Dr. Shams Scheik. Advanced German cardiac regeneration therapy removes arterial blockages and regenerates heart muscle cells. 90% success rate in avoiding invasive procedures."
+        keywords="CardioVitalize, non-surgical heart treatment, bypass surgery alternative, cardiac regeneration therapy, German heart treatment, coronary artery disease, angioplasty alternative, cardiovascular health, heart blockage treatment"
+        canonicalUrl="https://german-therapies.vercel.app/cardio-vitalize"
+        structuredData={structuredData}
+      />
       <Header />
       <main className="pt-24">
         {/* Hero Section */}

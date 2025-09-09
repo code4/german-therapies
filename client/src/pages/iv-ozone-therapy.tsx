@@ -1,5 +1,6 @@
 import Header from "@/components/header";
 import Footer from "@/components/footer";
+import SEO from "@/components/seo";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -51,8 +52,39 @@ const conditions = [
 ];
 
 export default function IVOzoneTherapy() {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "MedicalTherapy",
+    "name": "IV Ozonated Saline Therapy",
+    "description": "Revolutionary oxidative medicine combining medical ozone with IV saline for immune system modulation, detoxification, and cellular regeneration with minimal side effects.",
+    "provider": {
+      "@type": "MedicalBusiness",
+      "name": "German Therapies",
+      "founder": {
+        "@type": "Person",
+        "name": "Dr. Shams Scheik"
+      }
+    },
+    "medicalSpecialty": ["Oxidative Medicine", "Ozone Therapy", "Immune System Enhancement", "Detoxification Medicine"],
+    "treatmentBenefits": [
+      "Enhanced immune system function",
+      "Improved oxygen utilization", 
+      "Powerful detoxification effects",
+      "Reduced inflammation",
+      "Enhanced circulation",
+      "Antimicrobial activity"
+    ]
+  };
+
   return (
     <>
+      <SEO 
+        title="IV Ozonated Saline Therapy - Medical Ozone Treatment | German Therapies"
+        description="Experience the therapeutic power of IV Ozonated Saline Therapy (IVOST) by Dr. Shams Scheik. Advanced ozone medicine for immune system enhancement, detoxification, and cellular regeneration with proven safety protocols."
+        keywords="IV ozone therapy, ozonated saline therapy, IVOST, medical ozone, ozone medicine, immune system enhancement, detoxification therapy, oxidative medicine, antimicrobial therapy, cellular regeneration"
+        canonicalUrl="https://german-therapies.vercel.app/iv-ozone-therapy"
+        structuredData={structuredData}
+      />
       <Header />
       <main className="pt-24">
         {/* Hero Section */}

@@ -1,5 +1,6 @@
 import Header from "@/components/header";
 import Footer from "@/components/footer";
+import SEO from "@/components/seo";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -7,8 +8,41 @@ import { Badge } from "@/components/ui/badge";
 import { Scale, Target, TrendingDown, Clock } from "lucide-react";
 
 export default function WeightLoss() {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "MedicalTherapy",
+    "name": "German Scientific-Slim Program",
+    "description": "Revolutionary medically supervised non-surgical permanent weight loss program that addresses root causes using German medical science to reset metabolism and eating habits permanently.",
+    "provider": {
+      "@type": "MedicalBusiness",
+      "name": "German Therapies",
+      "founder": {
+        "@type": "Person",
+        "name": "Dr. Shams Scheik"
+      }
+    },
+    "medicalSpecialty": ["Medical Weight Loss", "Obesity Treatment", "Metabolic Medicine", "German Scientific Medicine"],
+    "treatmentBenefits": [
+      "Permanent weight loss without starvation",
+      "Addresses root causes not just symptoms", 
+      "Hormonal correction and metabolic reset",
+      "VLDL cholesterol reduction -20%",
+      "Triglycerides reduction -37%",
+      "Chronic inflammation reduction -30%",
+      "No muscle loss, targeted fat reduction",
+      "Comprehensive detoxification"
+    ]
+  };
+
   return (
     <>
+      <SEO 
+        title="Medical Weight Loss Program - German Scientific-Slim | German Therapies"
+        description="Achieve permanent weight loss with Dr. Shams Scheik's German Scientific-Slim Program. Medically supervised non-surgical treatment addresses root causes for lasting results. No starvation or extreme restrictions."
+        keywords="medical weight loss, German Scientific-Slim, obesity treatment, permanent weight loss, metabolic reset, hormone balance weight loss, medically supervised weight loss, non-surgical weight loss"
+        canonicalUrl="https://german-therapies.vercel.app/weight-loss"
+        structuredData={structuredData}
+      />
       <Header />
       <main className="pt-24">
         {/* Hero Section */}

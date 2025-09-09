@@ -1,5 +1,6 @@
 import Header from "@/components/header";
 import Footer from "@/components/footer";
+import SEO from "@/components/seo";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -7,8 +8,41 @@ import { Badge } from "@/components/ui/badge";
 import { Sparkles, Clock, Target, Calendar } from "lucide-react";
 
 export default function RejuvenesseAntiAging() {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "MedicalTherapy",
+    "name": "Rejuvenesse Anti-Aging Programs",
+    "description": "Revolutionary cellular regeneration programs that extend healthspan and quality of life through individualized scientific intervention and cutting-edge German anti-aging technology. Advanced anti-aging at the cellular level.",
+    "provider": {
+      "@type": "MedicalBusiness",
+      "name": "German Therapies",
+      "founder": {
+        "@type": "Person",
+        "name": "Dr. Shams Scheik"
+      }
+    },
+    "medicalSpecialty": ["Advanced Anti-Aging", "Cosmetic Treatments", "Cellular Regeneration", "German Anti-Aging Medicine"],
+    "treatmentBenefits": [
+      "Cellular regeneration and renewal",
+      "Scientific anti-aging at the cellular level", 
+      "Individualized treatment programs",
+      "Advanced diagnostic assessment",
+      "Enhanced energy and vitality",
+      "Improved skin health and appearance",
+      "Better cognitive function and memory",
+      "Comprehensive age reversal approach"
+    ]
+  };
+
   return (
     <>
+      <SEO 
+        title="Rejuvenesse Anti-Aging Programs - Advanced Cellular Regeneration | German Therapies"
+        description="Experience revolutionary anti-aging with Dr. Shams Scheik's Rejuvenesse Programs. Advanced cellular regeneration technology extends healthspan and quality of life. Scientific anti-aging at the cellular level with German precision."
+        keywords="Rejuvenesse anti-aging, advanced anti-aging, cellular regeneration, cosmetic treatments, German anti-aging technology, age reversal, longevity medicine, biomarkers of aging, anti-aging diagnostics"
+        canonicalUrl="https://german-therapies.vercel.app/rejuvenesse-anti-aging"
+        structuredData={structuredData}
+      />
       <Header />
       <main className="pt-24">
         {/* Hero Section */}

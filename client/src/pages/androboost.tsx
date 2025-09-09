@@ -1,5 +1,6 @@
 import Header from "@/components/header";
 import Footer from "@/components/footer";
+import SEO from "@/components/seo";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -36,8 +37,31 @@ const approaches = [
 ];
 
 export default function Androboost() {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "MedicalTherapy",
+    "name": "AndroBoost Program",
+    "description": "Advanced hormone optimization program for men addressing testosterone deficiency, erectile dysfunction, and male vitality enhancement.",
+    "provider": {
+      "@type": "MedicalBusiness",
+      "name": "German Therapies",
+      "founder": {
+        "@type": "Person",
+        "name": "Dr. Shams Scheik"
+      }
+    },
+    "medicalSpecialty": ["Hormone Therapy", "Men's Health", "Anti-Aging Medicine"]
+  };
+
   return (
     <>
+      <SEO 
+        title="AndroBoost Program - Advanced Hormone Therapy for Men | German Therapies"
+        description="Optimize your male hormones with the AndroBoost Program by Dr. Shams Scheik. Advanced testosterone therapy, erectile dysfunction treatment, and comprehensive men's health optimization."
+        keywords="AndroBoost, hormone therapy, testosterone therapy, men's health, erectile dysfunction treatment, male hormone optimization, TRT, testosterone replacement"
+        canonicalUrl="https://german-therapies.vercel.app/services/androboost"
+        structuredData={structuredData}
+      />
       <Header />
       <main className="pt-24">
         {/* Hero Section */}

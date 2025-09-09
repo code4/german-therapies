@@ -1,5 +1,6 @@
 import Header from "@/components/header";
 import Footer from "@/components/footer";
+import SEO from "@/components/seo";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -49,8 +50,31 @@ const applications = [
 ];
 
 export default function IVLaserTherapy() {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "MedicalTherapy",
+    "name": "IV Laser Therapy",
+    "description": "Advanced intravenous laser therapy for cellular regeneration, enhanced energy production, and comprehensive healing using cutting-edge photobiomodulation technology.",
+    "provider": {
+      "@type": "MedicalBusiness",
+      "name": "German Therapies",
+      "founder": {
+        "@type": "Person",
+        "name": "Dr. Shams Scheik"
+      }
+    },
+    "medicalSpecialty": ["IV Therapy", "Laser Medicine", "Regenerative Medicine"]
+  };
+
   return (
     <>
+      <SEO 
+        title="IV Laser Therapy - Advanced Photobiomodulation Treatment | German Therapies"
+        description="Experience cutting-edge IV Laser Therapy by Dr. Shams Scheik. Advanced photobiomodulation for cellular regeneration, enhanced energy production, and comprehensive healing."
+        keywords="IV laser therapy, photobiomodulation, intravenous laser, cellular regeneration, laser medicine, advanced IV therapy, light therapy"
+        canonicalUrl="https://german-therapies.vercel.app/services/iv-laser-therapy"
+        structuredData={structuredData}
+      />
       <Header />
       <main className="pt-24">
         {/* Hero Section */}
